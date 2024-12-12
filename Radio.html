@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Twoje Kolędy!</title>
+    <!-- Google Fonts dla czcionek świątecznych -->
+    <link href="https://fonts.googleapis.com/css2?family=Snowburst+One&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        /* Stylowanie dla ciała strony */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #000;
+            position: relative;
+            overflow: hidden;
+            background-image: url('https://img.freepik.com/darmowe-wektory/akwarela-swiateczny-blichtr-w-tle_79603-2307.jpg?t=st=1734012978~exp=1734016578~hmac=cb446ac3028d8c6be53328dc19b5865fc64df76c7b160a3e4769868eddb294c5&w=1380');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        /* Styl dla nagłówka z tekstem */
+        .header {
+            font-family: 'Sacramento', cursive;
+            font-size: 38px;
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.8); /* Białe tło z przezroczystością */
+            padding: 30px;
+            border: 2px solid #000;
+            margin: 40px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-weight: bold; /* Pogrubienie tekstu */
+        }
+        /* Styl dla napisu "Nasza historia" */
+        .history {
+            font-family: 'Sacramento', cursive;
+            font-size: 40px;
+            color: #000;
+            margin: 120px 0 20px; /* Większa przerwa */
+            font-weight: bold;
+        }
+        /* Styl dla odtwarzacza audio */
+        audio {
+            margin: 20px;
+            width: 70%; /* Skrócenie suwaka do 70% */
+            max-width: 600px;
+        }
+        /* Styl dla opisu */
+        .description {
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 0 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        /* Styl dla padającego śniegu */
+        .snowflake {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            color: black;
+            animation: snow 10s linear infinite;
+            pointer-events: none;
+            z-index: 999;
+        }
+        /* Animacja dla padającego śniegu */
+        @keyframes snow {
+            0% {
+                top: -50px;
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+        /* Generowanie różnych miejsc padającego śniegu */
+        .snowflake:nth-child(1) { left: 5%; animation-duration: 8s; }
+        .snowflake:nth-child(2) { left: 10%; animation-duration: 12s; }
+        .snowflake:nth-child(3) { left: 15%; animation-duration: 10s; }
+        .snowflake:nth-child(4) { left: 20%; animation-duration: 7s; }
+        .snowflake:nth-child(5) { left: 25%; animation-duration: 14s; }
+        .snowflake:nth-child(6) { left: 30%; animation-duration: 9s; }
+        .snowflake:nth-child(7) { left: 35%; animation-duration: 13s; }
+        .snowflake:nth-child(8) { left: 40%; animation-duration: 11s; }
+        .snowflake:nth-child(9) { left: 45%; animation-duration: 15s; }
+        .snowflake:nth-child(10) { left: 50%; animation-duration: 8s; }
+        .snowflake:nth-child(11) { left: 55%; animation-duration: 10s; }
+        .snowflake:nth-child(12) { left: 60%; animation-duration: 12s; }
+        .snowflake:nth-child(13) { left: 65%; animation-duration: 9s; }
+        .snowflake:nth-child(14) { left: 70%; animation-duration: 7s; }
+        .snowflake:nth-child(15) { left: 75%; animation-duration: 11s; }
+    </style>
+</head>
+<body>
+
+    <!-- Napis u góry -->
+    <div class="header">
+        Zanurz się w magicznym świecie kolęd. 24 godziny na dobę, 7 dni w tygodniu. Pozwól się porwać niezwykłej atmosferze świąt i poczuj magię Bożego Narodzenia w każdym dźwięku.
+    </div>
+
+    <!-- Odtwarzacz audio -->
+    <audio controls>
+        <source src="http://ch03.cdn.eurozet.pl/CHISWI.mp3" type="audio/mp3">
+        Twoja przeglądarka nie obsługuje odtwarzania audio.
+    </audio>
+
+    <!-- Napis "Nasza historia" -->
+    <div class="history">
+        Nasza historia
+    </div>
+
+    <!-- Opis -->
+    <div class="description">
+        Święta Bożego Narodzenia to czas, który napełnia nasze serca radością, ciepłem i nadzieją. W ciągu tych wyjątkowych dni pragniemy otaczać się bliskimi, dzielić się miłością, ale także zanurzyć się w magicznej atmosferze świąt. Właśnie po to stworzyliśmy ten stream – aby każdy mógł poczuć niepowtarzalną magię Bożego Narodzenia, niezależnie od tego, gdzie się znajduje i o jakiej porze dnia.
+
+        Kolędy i świąteczne piosenki od wieków towarzyszą nam podczas tego szczególnego okresu. Są one nośnikami tradycji, przypomnieniem o wartościach, które pielęgnujemy w sercach. Melodie te łączą pokolenia i są nieodłącznym elementem świątecznych spotkań. Nasza stacja muzyczna oferuje Ci nieprzerwaną dawkę tych dźwięków, które wprowadzą Cię w klimat świątecznej radości przez całą dobę, 7 dni w tygodniu.
+
+        Włączając nasz stream, przenosisz się do miejsca, gdzie magia Bożego Narodzenia trwa przez cały rok. Będziesz mógł cieszyć się kolędami, które przypomną Ci o tym, co naprawdę ważne: rodzinie, miłości, pokoju i nadziei na lepsze jutro. To nie tylko muzyka, to także chwile pełne wspomnień i refleksji nad tym, jak cudowny jest ten wyjątkowy czas w roku.
+
+        Nasza audycja to coś więcej niż tylko odtwarzanie muzyki. To przestrzeń, która łączy ludzi i daje poczucie wspólnoty. Bez względu na to, czy jesteś w domu, w pracy, czy podróżujesz, zawsze możesz mieć przy sobie odrobinę świątecznej atmosfery. Dźwięki kolęd wypełniają przestrzeń, a Ty możesz poczuć się jak część czegoś większego, część tradycji, która nigdy nie przeminie.
+
+        Kolędy niosą ze sobą ponadczasowe przesłanie. Ich słowa i melodie przypominają nam, że w tym zabieganym świecie warto zatrzymać się na chwilę i docenić to, co naprawdę ważne. Dzięki naszemu streamowi masz możliwość poczuć tę magię bez względu na porę dnia czy miejsca, w którym się znajdujesz.
+
+        Pozwól, aby dźwięki świątecznych utworów towarzyszyły Ci przez cały dzień. Poczuj, jak święta zaczynają wypełniać Twoje serce, a Boże Narodzenie stanie się obecne w każdej chwili Twojego życia. Z każdą nutą poczujesz radość, spokój i niepowtarzalną atmosferę, która sprawia, że ten czas jest tak wyjątkowy.
+    </div>
+
+    <!-- Padający śnieg -->
+    <div class="snowflake" style="animation-delay: 0s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 2s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 4s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 6s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 8s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 10s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 12s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 14s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 16s;">❄️</div>
+    <div class="snowflake" style="animation-delay: 18s;">❄️</div>
+
+</body>
+</html>
